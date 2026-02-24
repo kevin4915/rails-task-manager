@@ -9,6 +9,15 @@ Rails.application.routes.draw do
   # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
+  resources :tasks
+
   # Defines the root path route ("/")
   # root "posts#index"
+  # get "tasks", to: "tasks#index"
+  # get "tasks/new", to: "tasks#new"
+  # post "tasks", to: "tasks#create"
+  # get "tasks/:id/edit", to: "tasks#edit", as: :task_edit
+  # patch "tasks/:id", to: "tasks#update"
+  # delete "task/:id", to: "task#destroy"
+  # get "tasks/:id", to: "tasks#show", as: :task
 end
